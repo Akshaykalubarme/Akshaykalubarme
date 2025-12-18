@@ -4,31 +4,16 @@ public class PalindromeCheck {
 
     public static void main(String[] args) {
         String original = "MADAM";
+        String reverse = "";
 
-        if (isPalindrome(original)) {
-            System.out.println(original + " is Palindrome");
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reverse += original.charAt(i);
+        }
+        if (original.equals(reverse)) {
+            System.out.println(original + ": This is palindrome");
         } else {
-            System.out.println(original + " is Not Palindrome");
+            System.out.println(original + ": This is not palindrome");
         }
 
-        // System.out.println(
-        // original.equalsIgnoreCase(new StringBuilder(original).reverse().toString()) ?
-        // "Palindrome" : "Not Palindrome");
     }
-
-    public static boolean isPalindrome(String original) {
-        int left = 0;
-        int right = original.length() - 1;
-
-        while (left < right) {
-            if (original.charAt(left) != original.charAt(right)) {
-                return false;
-            }
-            left++;
-            right--;
-        }
-        return true;
-
-    }
-
 }

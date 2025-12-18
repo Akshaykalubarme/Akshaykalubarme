@@ -1,5 +1,9 @@
 package Java;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 public class LambdaExpression {
 
     @FunctionalInterface
@@ -31,5 +35,16 @@ public class LambdaExpression {
         System.out.println("Multiply 10 * 5 = " + multiply.operate(10, 5));
         System.out.println("Divide 10 / 5 = " + divide.operate(10, 5));
 
+        // second highest number
+        Integer[] numbers = { 3, 10, 5, 2 };
+
+        List<Integer> numList = Arrays.asList(numbers);
+        int secondHightest = numList.stream()
+                .sorted(Comparator.reverseOrder())
+                .distinct()
+                .skip(1)
+                .findFirst()
+                .get();
+        System.out.println(secondHightest);
     }
 }

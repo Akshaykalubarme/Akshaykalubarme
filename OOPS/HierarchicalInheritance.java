@@ -21,11 +21,12 @@ public class HierarchicalInheritance {
     }
 
     public static void main(String[] args) {
-        // Dog dog = new Dog();
-        // dog.bark();
-        // dog.eat();
-
+        Dog dog = new Dog();
         Bird bird = new Bird();
+
+        dog.eat();
+        dog.bark();
+
         bird.fly();
         bird.eat();
 

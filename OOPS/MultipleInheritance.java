@@ -2,31 +2,30 @@ package OOPS;
 
 public class MultipleInheritance {
 
-    public interface Car {
-        void showCar();
+    interface Payment {
+        void pay();
     }
 
-    public interface Bike {
-        void showBike();
+    interface Refund {
+        void refund();
     }
 
-    public static class Showroom implements Car, Bike {
-
+    public static class OnlineTransaction implements Payment, Refund {
         @Override
-        public void showCar() {
-            System.out.println("My favorite lamborghini Car");
+        public void pay() {
+            System.out.println("Payment done successfully");
         }
 
         @Override
-        public void showBike() {
-            System.out.println("I Love ZX 10R Bike");
+        public void refund() {
+            System.out.println("Refund successfully");
         }
 
     }
 
     public static void main(String[] args) {
-        Showroom showroom = new Showroom();
-        showroom.showCar();
-        showroom.showBike();
+        OnlineTransaction ot = new OnlineTransaction();
+        ot.pay();
+        ot.refund();
     }
 }

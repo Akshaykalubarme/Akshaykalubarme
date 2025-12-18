@@ -4,13 +4,13 @@ public class MultilevelInheritance {
 
     public static class Animal {
         void eat() {
-            System.out.println("Animal eats food!!");
+            System.out.println("Animal eats food");
         }
     }
 
     public static class Dog extends Animal {
         void bark() {
-            System.out.println("Dog barks..");
+            System.out.println("Dog barks");
         }
     }
 
@@ -21,17 +21,10 @@ public class MultilevelInheritance {
     }
 
     public static void main(String[] args) {
-        // Animal an = new Animal();
-        // an.eat();
-
-        // Dog dog = new Dog();
-        // dog.eat();
-        // dog.bark();
-
         Bird bird = new Bird();
-        bird.fly();
         bird.eat();
         bird.bark();
+        bird.fly();
     }
 
 }

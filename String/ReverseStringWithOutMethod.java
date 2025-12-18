@@ -3,37 +3,40 @@ package String;
 public class ReverseStringWithOutMethod {
 
     public static void main(String[] args) {
-        String original = "Hello Wor/ld!";
-        String reverseOriginalString = reverseOriginalString(original);
 
-        System.out.println("Reversed String: " + reverseOriginalString);
-    }
+        String original = "Akshay!";
 
-    private static String reverseOriginalString(String original) {
-        if (original == null || original.length() <= 1) {
-            return original;
-        }
+        // for loop
+        // String reverse = "";
+        // for (int i = original.length() - 1; i >= 0; i--) {
+        // reverse += original.charAt(i);
+        // }
+        // System.out.println(reverse);
 
-        String reversed = "";
+        // char [] array
+        // char[] ch = original.toCharArray();
+        // for (int i = ch.length - 1; i >= 0; i--) {
+        // System.out.print(ch[i]);
+        // }
+
+        // remove !!
+        String reverse = "";
         for (int i = original.length() - 1; i >= 0; i--) {
-            char ch = original.charAt(i);
-            if (ch != '/') { // skip '/' character
-                reversed += ch;
+            char c = original.charAt(i);
+            if (c != '!') {
+                reverse += c;
             }
         }
-        for (int i = original.length() - 1; i >= 0; i--) {
-            char ch = original.charAt(i);
-            if (ch == '/') {
-                reversed += ' '; // Replace '/' with space
-            } else {
-                reversed += ch;
-            }
-        }
-        for (int i = original.length() - 1; i >= 0; i--) {
-            reversed += original.charAt(i);
+        System.out.println(reverse);
+
+        // substring
+        String subString = "sha";
+        if (original.contains(subString.toLowerCase())) {
+            System.out.println("This is sub string");
+        } else {
+            System.out.println("This is not sub string");
         }
 
-        return reversed;
     }
 
 }
