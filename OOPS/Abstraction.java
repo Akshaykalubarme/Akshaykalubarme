@@ -1,6 +1,7 @@
 package OOPS;
 
 abstract class Vehicle {
+
     abstract void start();
 
     void fuelType() {

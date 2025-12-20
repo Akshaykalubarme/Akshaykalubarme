@@ -2,12 +2,14 @@ package OOPS;
 
 public class SingleInheritance {
 
+    // parent class
     public static class Animal {
         void eat() {
             System.out.println("Animal is eating...");
         }
     }
 
+    // child class
     public static class Dog extends Animal {
         void bark() {
             System.out.println("Dog is barking!!!");
