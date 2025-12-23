@@ -1,0 +1,22 @@
+package Java.Singleton;
+
+public class LazySingleton {
+
+    public static LazySingleton instance;
+
+    // private constructor
+    private LazySingleton() {
+        System.out.println("This is Lazy Singleton  class");
+    }
+
+    public static LazySingleton getInstance() {
+        if (instance == null) {
+            instance = new LazySingleton();
+        }
+        return instance;
+    }
+
+    public static void main(String[] args) {
+        LazySingleton ls = LazySingleton.getInstance();
+    }
+}

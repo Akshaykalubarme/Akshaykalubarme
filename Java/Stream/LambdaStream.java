@@ -1,4 +1,4 @@
-package Java;
+package Java.Stream;
 
 import java.util.Arrays;
 import java.util.HashSet;

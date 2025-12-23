@@ -8,6 +8,7 @@ public class CountCharacter {
     public static void main(String[] args) {
         String input = "Akshay";
 
+        input = input.toLowerCase();
         // for loop and map
         Map<Character, Integer> map = new HashMap<>();
         for (char ch : input.toLowerCase().toCharArray()) {
@@ -20,7 +21,7 @@ public class CountCharacter {
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
-        // System.out.println(result);
+        System.out.println(result);
         // ----------------------------------------------------------------
         char target = 'a';
         int count = 0;

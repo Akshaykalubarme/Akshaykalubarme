@@ -1,26 +1,19 @@
 package String;
 
-public class ReverseStringWithOutMethod {
+public class ReverseString {
 
     public static void main(String[] args) {
 
         String original = "Akshay!";
 
         // for loop
-        // String reverse = "";
-        // for (int i = original.length() - 1; i >= 0; i--) {
-        // reverse += original.charAt(i);
-        // }
-        // System.out.println(reverse);
-
-        // char [] array
-        // char[] ch = original.toCharArray();
-        // for (int i = ch.length - 1; i >= 0; i--) {
-        // System.out.print(ch[i]);
-        // }
+        String reverse = "";
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reverse += original.charAt(i);
+        }
+        System.out.println(reverse);
 
         // remove !!
-        String reverse = "";
         for (int i = original.length() - 1; i >= 0; i--) {
             char c = original.charAt(i);
             if (c != '!') {
