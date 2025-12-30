@@ -2,12 +2,12 @@ package Java.Singleton;
 
 public class EagerSingleton {
 
-    private static final EagerSingleton instance = new EagerSingleton();
-
     // private constructor
     private EagerSingleton() {
         System.out.println("This is Eager Singleton class");
     }
+
+    private static final EagerSingleton instance = new EagerSingleton();
 
     public static EagerSingleton getInstance() {
         return instance;

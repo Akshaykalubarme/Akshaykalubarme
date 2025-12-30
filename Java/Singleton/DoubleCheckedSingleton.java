@@ -2,11 +2,11 @@ package Java.Singleton;
 
 public class DoubleCheckedSingleton {
 
-    private static volatile DoubleCheckedSingleton instance;
-
     private DoubleCheckedSingleton() {
         System.out.println("This is Double Checked Singleton class");
     }
+
+    private static volatile DoubleCheckedSingleton instance;
 
     public static DoubleCheckedSingleton getInstance() {
         // first check

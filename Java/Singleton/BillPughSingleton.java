@@ -4,7 +4,6 @@ public class BillPughSingleton {
 
     private BillPughSingleton() {
         System.out.println("This is Bill Pugh Singleton  class");
-
     }
 
     private static class Helper {
