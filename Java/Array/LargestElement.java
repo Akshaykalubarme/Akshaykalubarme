@@ -6,7 +6,6 @@ public class LargestElement {
 
         // Find the Largest Element in an Array
         // output: 9
-
         int[] arr = { 1, 2, 5, 7, 9, 3 };
 
         int max = arr[0];

@@ -14,7 +14,6 @@ public class DuplicateElement {
                 set.add(i);
             }
         }
-
         System.out.println(set);
     }
 }

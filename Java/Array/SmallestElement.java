@@ -5,7 +5,6 @@ public class SmallestElement {
 
         // Find smallest element in array
         // output: 1
-
         int[] arr = { 4, 1, 2, 3, 5, 7, 9 };
         int min = arr[0];
 

@@ -9,13 +9,12 @@ public class MissingNumber {
 
         // 1st approach
         int expectedSum = n * (n + 1) / 2;
-        int actualSum = 0;
 
         for (int i : arr) {
-            actualSum += i;
+            expectedSum -= i;
         }
-        int missingNumber = expectedSum - actualSum;
-        System.out.println("Missing Number is: " + missingNumber);
+
+        System.out.println("Missing Number is: " + expectedSum);
 
         // 2nd approach - fast result
         int xor = 0;
@@ -24,6 +23,6 @@ public class MissingNumber {
         for (int num : arr) {
             xor ^= num;
         }
-        System.out.println(xor);
+        System.out.println("Missing Number is with XOR:" + xor);
     }
 }
