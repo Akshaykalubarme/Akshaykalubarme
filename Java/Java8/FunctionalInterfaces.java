@@ -17,7 +17,6 @@ public class FunctionalInterfaces {
         System.out.println(a.sum(10, 20));
 
         // Built-in Functional Interfaces
-
         // Supplier: Don't take input but return value
         Supplier<Double> random = () -> Math.random();
         System.out.println(random.get());

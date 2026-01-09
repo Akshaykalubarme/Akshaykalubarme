@@ -30,7 +30,7 @@ public class CountCharacter {
                 count++;
             }
         }
-        // System.out.println(target + ": " + count);
+        System.out.println(target + ": " + count);
         // ----------------------------------------------------------------
 
     }

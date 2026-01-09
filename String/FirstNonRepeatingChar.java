@@ -9,7 +9,7 @@ public class FirstNonRepeatingChar {
 
     public static void main(String[] args) {
 
-        String str = "abcdabcbbeg";
+        String str = "swiss";
 
         Map<Character, Integer> map = new HashMap<>();
         List<Character> result = new ArrayList<>();
@@ -19,13 +19,13 @@ public class FirstNonRepeatingChar {
         }
         for (char ch : str.toCharArray()) {
             if (map.get(ch) == 1) {
-                // System.out.println("First non repeating character: " + ch);
+                System.out.println("First non repeating character: " + ch);
                 // System.out.println("First non repeating character count: " + map);
-                result.add(ch);
-                // break;
+                // result.add(ch);
+                break;
             }
         }
-        System.out.println("First non repeating characters: " + result);
+        // System.out.println("First non repeating characters: " + result);
 
     }
 }

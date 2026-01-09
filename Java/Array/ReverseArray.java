@@ -12,18 +12,18 @@ public class ReverseArray {
         int[] arr3 = { 10, 50, 33, 77, 52, 98 };
 
         // First Approach:
-        // int start = 0, end = arr.length - 1;
+        int start = 0, end = arr.length - 1;
 
-        // while (start < end) {
-        // int temp = arr[start];
-        // arr[start] = arr[end];
-        // arr[end] = temp;
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
 
-        // start++;
-        // end--;
+            start++;
+            end--;
 
-        // }
-        // System.out.println(Arrays.toString(arr));
+        }
+        System.out.println(Arrays.toString(arr));
 
         // Second Approach:
         reverse(arr, 0, arr.length - 1);
