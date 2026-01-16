@@ -5,8 +5,7 @@ import java.util.HashSet;
 public class LongestNonRepeatingSubstring {
     public static void main(String[] args) {
 
-        // output: abcd
-        String original = "abcdabcbb";
+        String original = "pwwkew";
 
         HashSet<Character> set = new HashSet<>();
         String longest = "";

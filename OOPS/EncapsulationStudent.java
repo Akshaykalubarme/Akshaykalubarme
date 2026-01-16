@@ -2,8 +2,8 @@ package OOPS;
 
 public class EncapsulationStudent {
 
-    public String name;
-    public int age;
+    private String name;
+    private int age;
 
     // getter for name
     public String getName() {

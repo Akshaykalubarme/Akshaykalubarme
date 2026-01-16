@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -50,7 +49,7 @@ public class LambdaList {
                                 .max(Map.Entry.comparingByValue()) // highest frequency
                                 .get()
                                 .getKey();
-                // System.out.println(hightCha);
+                System.out.println(hightCha);
 
                 // flatten
                 List<List<Integer>> list = List.of(
