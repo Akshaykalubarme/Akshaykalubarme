@@ -34,7 +34,8 @@ public class EmployeeStream {
         // .skip(1).findFirst();
 
         // System.out.println(shs.orElse(0.0));
-        Optional<Double> salary = findNthHighestSalary(employees, 3);
+        int n = 3;
+        Optional<Double> salary = findNthHighestSalary(employees, n);
         System.out.println(salary.orElse(0.0));
     }
 

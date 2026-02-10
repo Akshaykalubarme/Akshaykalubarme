@@ -92,7 +92,7 @@ public class StreamAPIProblems {
 
         // 7. Find the last element of a stream
         Integer lastElement = list.stream().reduce((x, y) -> y).orElse(0);
-        // System.out.println("lastElement: " + lastElement);
+        System.out.println("lastElement: " + lastElement);
 
         // 8. Check if any number is divisible by 5
         boolean hasDivisibleBy5 = list.stream().allMatch(n -> n % 5 == 0);

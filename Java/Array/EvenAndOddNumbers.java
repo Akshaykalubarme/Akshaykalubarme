@@ -3,7 +3,7 @@ package Java.Array;
 public class EvenAndOddNumbers {
 
     public static void main(String[] args) {
-        // count even and odd numbers
+        // even and odd numbers
         int[] arr = { 1, 2, 3, 4, 5 };
 
         System.out.print("Even Numbers: ");

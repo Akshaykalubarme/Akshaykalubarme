@@ -14,7 +14,7 @@ public class CountCharacter {
         for (char ch : input.toLowerCase().toCharArray()) {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
-        // System.out.println(map);
+        System.out.println(map);
         // ----------------------------------------------------------------
         // stream api
         Map<Character, Long> result = input.chars()
