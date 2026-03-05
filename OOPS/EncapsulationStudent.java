@@ -24,6 +24,8 @@ public class EncapsulationStudent {
     public void setAge(int age) {
         if (age > 0) {
             this.age = age;
+        } else {
+            System.out.println("Age must be greater then 0");
         }
     }
 
@@ -32,8 +34,10 @@ public class EncapsulationStudent {
         es.setName("Akshay");
         es.setAge(27);
 
-        System.out.println("Name: " + es.name);
-        System.out.println("Age: " + es.age);
+        if (es.getAge() > 0) {
+            System.out.println("Name: " + es.name);
+            System.out.println("Age: " + es.age);
+        }
     }
 
 }

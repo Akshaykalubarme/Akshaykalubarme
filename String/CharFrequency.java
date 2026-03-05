@@ -8,7 +8,7 @@ public class CharFrequency {
         String str = "Java";
         HashMap<Character, Integer> map = new HashMap<>();
 
-        for (char c : str.toCharArray()) {
+        for (char c : str.toLowerCase().toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
         System.out.println(map);

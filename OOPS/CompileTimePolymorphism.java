@@ -18,9 +18,9 @@ public class CompileTimePolymorphism {
 
     public static void main(String[] args) {
         CompileTimePolymorphism ctp = new CompileTimePolymorphism();
-        System.out.println(ctp.add(10, 20));
-        System.out.println(ctp.add(25, 10, 20, 40));
-        System.out.println(ctp.add(2, 10, 2, 4));
+        System.out.println(ctp.add(10, 20)); // 30
+        System.out.println(ctp.add(25, 10, 20)); // 55
+        System.out.println(ctp.add(2, 10, 2, 4)); // 18.0
     }
 
 }

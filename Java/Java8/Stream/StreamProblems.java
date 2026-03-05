@@ -79,7 +79,7 @@ public class StreamProblems {
 
         // Q16. findFirst() & findAny()
         Optional<Integer> first = nums.stream().findFirst();
-        System.out.println("first: " + first);
+        System.out.println("first: " + first.orElse(0));
 
         Optional<Integer> any = nums.stream().findAny();
         System.out.println("Find Any: " + any);

@@ -9,17 +9,16 @@ public class MoveAllZerosToStart {
         int[] arr = { 0, 5, 0, 2, 4, 0 };
         int index = arr.length - 1;
 
-        // move non-zero elements to the end
-        for (int i = arr.length - 1; i >= 0; i--) {
+        // Step 1: Move all non-zero elements to the end
+        for (int i = index; i >= 0; i--) {
             if (arr[i] != 0) {
-                arr[index] = arr[i];
-                index--;
+                arr[index--] = arr[i];
             }
         }
-        // fill remaining positions with 0
+
+        // Step 2: Fill remaining positions with zeros
         while (index >= 0) {
-            arr[index] = 0;
-            index--;
+            arr[index--] = 0;
         }
 
         System.out.println("Swap Method: " + Arrays.toString(arr));

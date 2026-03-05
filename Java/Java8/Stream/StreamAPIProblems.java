@@ -167,13 +167,13 @@ public class StreamAPIProblems {
 
         // 25.Extract salaries from employee list
         List<Employee> employees = List.of(
-                new Employee(1, "Alice", 50000, "IT"),
+                new Employee(1, "Alice", 50000.7, "IT"),
                 new Employee(2, "Bob", 70000, "Dev"),
                 new Employee(3, "Charlie", 60000, "Dev"),
-                new Employee(4, "Akshay", 80000, "IT"));
+                new Employee(4, "Akshay", 80000.5, "IT"));
 
         List<Double> salary = employees.stream().map(Employee::getSalary).toList();
-        // System.out.println("salary: " + salary);
+        System.out.println("salary: " + salary);
 
         // 26. max salary
         OptionalDouble maxSalary = employees.stream().mapToDouble(Employee::getSalary).max();
